@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Shapes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Optional: To contrast the table */
+            margin: 0;
+            padding: 0;
+        }
+        .table-container {
+            width: 100%;
+            margin: auto;
+            border-collapse: separate;
+            border-spacing: 10px; /* Adds space between cells */
+            background-color: #d4f1f9; /* Table background color */
+            padding: 10px;
+            border-radius: 15px; /* Rounded corners for the table */
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+        .table-container th, .table-container td {
+            border: 1px solid #9bd0db;
+            padding: 10px;
+            background-color: #d4f1f9; /* Cell background color matches table */
+            border-radius: 10px; /* Rounded corners for each cell */
+        }
+        .table-container th {
+            text-align: center; /* Center-align headings */
+        }
+        .table-container td {
+            text-align: left; /* Left-align cell values */
+        }
+        .shapes-container {
+            width: 25%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap: 20px;
+        }
+        .shape {
+            border: 2px solid #a4e845;
+            height: 50px;
+            border-radius: 10px;
+        }
+        .shape:nth-child(3),
+        .shape:nth-child(6) {
+            border-radius: 15px; /* Rounded edge rectangles */
+        }
+        .shape:nth-child(7) {
+            border-radius: 50% / 100%; /* Oval shape */
+        }
+        .shape:nth-child(9) {
+            border-radius: 10px 0 10px 0; /* Opposite edges rounded */
+        }
+    </style>
+</head>
+<body>
+    <table class="table-container">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="shapes-container">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+</body>
+</html>
